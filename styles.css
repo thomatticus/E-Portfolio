@@ -162,6 +162,7 @@ nav {
     overflow: hidden;
     box-shadow: 0 8 px 16 px rgba (0, 0, 0, 0.16);
     margin-bottom: 28px;
+    animation: animate-profile-picture 800ms 200ms backwards;
 }
 
 @keyframes animate-profile-picture {
@@ -187,6 +188,7 @@ padding-top: 8px;
 .about-me__info--title {
     font-size: 20px;
     margin-bottom: 16px;
+    animation: fade-up 650ms 400ms backwards;
 }
 
 .about-me__info--para {
@@ -199,6 +201,17 @@ padding-top: 8px;
     color: #242424;
     text-decoration: none;
     padding: 0 16px;
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .about-me__img--container {
