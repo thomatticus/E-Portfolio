@@ -194,6 +194,7 @@ padding-top: 8px;
 .about-me__info--para {
     font-size: 20px;
     margin-bottom: 28px;
+    animation: fade-up 650ms 600ms backwards;
 }
 
 .about-me__link {
@@ -201,6 +202,10 @@ padding-top: 8px;
     color: #242424;
     text-decoration: none;
     padding: 0 16px;
+}
+
+.about-me__links {
+    animation: fade-up 650ms 800ms backwards;
 }
 
 @keyframes fade-up {
@@ -222,6 +227,33 @@ padding-top: 8px;
 
 .about-me__img {
     width: 100%;
+    animation: fade-in 1200ms 800ms backwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% { 
+        opacity: 1;
+    }
+}
+
+.wave {
+display: inline-block; 
+animation: animate-wave 500ms infinite;
+}
+
+@keframes animate-wave {
+0% {
+    transform: rotate(0);
+}
+50% {
+    transform: rotate(30deg);
+}
+100% {
+    transform rotate(0);
+}
 }
 
 /* TECH - STACK */
